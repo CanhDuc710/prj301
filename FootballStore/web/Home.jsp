@@ -102,13 +102,13 @@
                                         <div class="right_header_info">
                                             <ul>
                                                 <li class="menu_iconb">
-                                                    <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />7213456789</a>
+                                                    <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />31232156789</a>
                                                 </li>
                                                 <li class="menu_iconb">
-                                                    <a href="#">Log in <img style="margin-right: 15px;" src="icon/5.png" alt="#" /> </a>
+                                                    <a href="Login.jsp">Log in <img style="margin-right: 15px;" src="icon/5.png" alt="Login.jsp" /> </a>
                                                 </li>
                                                 <li class="menu_iconb">
-                                                    <a href="#">Signup<img style="margin-left: 15px;" src="icon/6.png" alt="#" /></a>
+                                                    <a href="#">Sign up<img style="margin-left: 15px;" src="icon/6.png" alt="#" /></a>
                                                 </li>
                                                 <li class="tytyu">
                                                     <a href="#"> <img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
@@ -476,7 +476,7 @@
                                                 <li><a href="#">Wishlist</a> </li>
                                                 <li><a href="#">My Cart</a> </li>
                                                 <li><a href="#">Checkout</a> </li>
-                                                <li><a href="Login.jsp">Login</a> </li>
+                                                <li><a href="http://localhost:8080/FootballStore/Login.jsp#">Login</a> </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -488,7 +488,7 @@
                                                 <li><a href="#">Wishlist</a> </li>
                                                 <li><a href="#">My Cart</a> </li>
                                                 <li><a href="#"> Checkout</a> </li>
-                                                <li><a href="#">Login</a> </li>
+                                                <li><a href="Login.jsp">Login</a> </li>
                                             </ul>
                                         </div>
                                     </div>
