@@ -131,7 +131,7 @@
                     </div>  
                 </div>		      
             </form>
-            <div class="text-center">Already have an account? <a href="#">Login here</a></div>
+            <div class="text-center">Already have an account? <a href="Login.jsp">Login here</a></div>
         </div>
     </body>
 </html>
