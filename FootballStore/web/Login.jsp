@@ -1,6 +1,6 @@
 <%-- 
     Document   : Login
-    Created on : Jun 12, 2023, 12:22:23 AM
+    Created on : Jun 19, 2023, 10:32:43 PM
     Author     : ASUS
 --%>
 
@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>prj</title>
+        <title>Bootstrap Simple Login Form</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -24,7 +24,7 @@
             }
             .login-form form {
                 margin-bottom: 15px;
-                background: #f7f7f7;
+                background:white;
                 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
                 padding: 30px;
             }
@@ -39,11 +39,20 @@
                 font-size: 15px;
                 font-weight: bold;
             }
+            .float-right {
+                color: black;
+            }
+            .text-center a {
+                color: black;   
+            }
+            .btn btn-primary btn-block {
+                color: black;
+            }
         </style>
     </head>
     <body>
         <div class="login-form">
-            <form action="login" method="post">
+            <form action="/examples/actions/confirmation.php" method="post">
                 <h2 class="text-center">Log in</h2>       
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Username" required="required">

@@ -1,600 +1,423 @@
 <%-- 
     Document   : Home
-    Created on : Jun 12, 2023, 12:17:05 AM
+    Created on : Jun 19, 2023, 10:28:53 PM
     Author     : ASUS
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <!-- basic -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- mobile metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-        <!-- site metas -->
-        <title>lion</title>
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- style css -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Responsive-->
-        <link rel="stylesheet" href="css/responsive.css">
-        <!-- fevicon -->
-        <link rel="icon" href="images/fevicon.png" type="image/gif" />
-        <!-- Scrollbar Custom CSS -->
-        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-        <!-- Tweaks for older IEs-->
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-    </head>
-    <!-- body -->
-
-    <body class="main-layout">
-        <!-- loader  -->
-        <div class="loader_bg">
-            <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Boutique | Ecommerce bootstrap template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- gLightbox gallery-->
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.min.css">
+    <!-- Range slider-->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+    <!-- Choices CSS-->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;800&amp;display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+    <div class="page-holder">
+      <!-- navbar-->
+      <header class="header bg-white">
+        <div class="container px-lg-3">
+          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><a class="navbar-brand" href="index.html"><span class="fw-bold text-uppercase text-dark">Boutique</span></a>
+            <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <!-- Link--><a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Link--><a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Link--><a class="nav-link" href="detail.html">Product detail</a>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                  <div class="dropdown-menu mt-3 shadow-sm" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="index.html">Homepage</a><a class="dropdown-item border-0 transition-link" href="shop.html">Category</a><a class="dropdown-item border-0 transition-link" href="detail.html">Product detail</a><a class="dropdown-item border-0 transition-link" href="cart.html">Shopping cart</a><a class="dropdown-item border-0 transition-link" href="checkout.html">Checkout</a></div>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto">               
+                <li class="nav-item"><a class="nav-link" href="cart.html"> <i class="fas fa-dolly-flatbed me-1 text-gray"></i>Cart<small class="text-gray fw-normal">(2)</small></a></li>
+                <li class="nav-item"><a class="nav-link" href="#!"> <i class="far fa-heart me-1"></i><small class="text-gray fw-normal"> (0)</small></a></li>
+                <li class="nav-item"><a class="nav-link" href="#!"> <i class="fas fa-user me-1 text-gray fw-normal"></i>Login</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-
-        <div class="wrapper">
-
-            <!-- end loader -->
-            <div class="sidebar">
-                <!-- Sidebar  -->
-                <nav id="sidebar">
-
-                    <div id="dismiss">
-                        <i class="fa fa-arrow-left"></i>
-                    </div>
-
-                    <ul class="list-unstyled components">
-
-                        <li class="active">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#brand">Brands</a>
-                        </li>
-                        <li>
-                            <a href="#shoes">Shoes</a>
-                        </li>
-                        <li>
-                            <a href="#jewellery">Jewellery</a>
-                        </li>
-                        <li>
-                            <a href="#kids">Kids and Babies</a>
-                        </li>
+      </header>
+      <!--  Modal -->
+      <div class="modal fade" id="productView" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content overflow-hidden border-0">
+            <button class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body p-0">
+              <div class="row align-items-stretch">
+                <div class="col-lg-6 p-lg-0"><a class="glightbox product-view d-block h-100 bg-cover bg-center" style="background: url(img/product-5.jpg)" href="img/product-5.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-1.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a><a class="glightbox d-none" href="img/product-5-alt-2.jpg" data-gallery="gallery1" data-glightbox="Red digital smartwatch"></a></div>
+                <div class="col-lg-6">
+                  <div class="p-4 my-md-4">
+                    <ul class="list-inline mb-2">
+                      <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                      <li class="list-inline-item m-0 1"><i class="fas fa-star small text-warning"></i></li>
+                      <li class="list-inline-item m-0 2"><i class="fas fa-star small text-warning"></i></li>
+                      <li class="list-inline-item m-0 3"><i class="fas fa-star small text-warning"></i></li>
+                      <li class="list-inline-item m-0 4"><i class="fas fa-star small text-warning"></i></li>
                     </ul>
-
-                </nav>
+                    <h2 class="h4">Red digital smartwatch</h2>
+                    <p class="text-muted">$250</p>
+                    <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
+                    <div class="row align-items-stretch mb-4 gx-0">
+                      <div class="col-sm-7">
+                        <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small text-uppercase text-gray mr-4 no-select">Quantity</span>
+                          <div class="quantity">
+                            <button class="dec-btn p-0"><i class="fas fa-caret-left"></i></button>
+                            <input class="form-control border-0 shadow-0 p-0" type="text" value="1">
+                            <button class="inc-btn p-0"><i class="fas fa-caret-right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Add to cart</a></div>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Add to wish list</a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div id="content">
-                <!-- header -->
-                <header>
-                    <!-- header inner -->
-                    <div class="head_top">
-                        <div class="header">
-
-                            <div class="container-fluid">
-
-                                <div class="row">
-                                    <div class="col-lg-3 logo_section">
-                                        <div class="full">
-                                            <div class="center-desk">
-                                                <div class="logo">
-                                                    <a href="index.html"><img src="images/logo.png" alt="#"></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <div class="right_header_info">
-                                            <ul>
-                                                <li class="menu_iconb">
-                                                    <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />31232156789</a>
-                                                </li>
-                                                <li class="menu_iconb">
-                                                    <a href="Login.jsp">Log in <img style="margin-right: 15px;" src="icon/5.png" alt="Login.jsp" /> </a>
-                                                </li>
-                                                <li class="menu_iconb">
-                                                    <a href="#">Sign up<img style="margin-left: 15px;" src="icon/6.png" alt="#" /></a>
-                                                </li>
-                                                <li class="tytyu">
-                                                    <a href="#"> <img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
-                                                </li>
-                                                <li class="menu_iconb">
-                                                    <a href="#"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
-                                                </li>
-
-                                                <li>
-                                                    <button type="button" id="sidebarCollapse">
-                                                        <img src="images/menu_icon.png" alt="#" />
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- end header inner -->
-
-                        <!-- end header -->
-                        <section class="slider_section">
-                            <div class="banner_main">
-                                <div class="container-fluid padding3">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mapimg">
-                                            <div class="text-bg">
-                                                <h1>All <br>
-                                                    In<br>
-                                                    One <br>
-                                                    Shop</h1>
-                                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-                                                <a href="#">Buy now</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                                            <div id="myCarousel" class="carousel slide banner_Client" data-ride="carousel">
-                                                <ol class="carousel-indicators">
-                                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                                </ol>
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <div class="container">
-                                                            <div class="carousel-caption text">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="img_bg">
-                                                                            <figure><img src="images/cap.png" /></figure>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="container">
-                                                            <div class="carousel-caption text">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="img_bg">
-                                                                            <figure><img src="images/cap.png" /></figure>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="container">
-                                                            <div class="carousel-caption text">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <div class="img_bg">
-                                                                            <figure><img src="images/cap.png" /></figure>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                    </div>
-                </header>
-                <!-- Categories -->
-                <div class="Categories">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="title">
-                                    <h2> Categories</h2>
-                                    <ul class="categiri">
-                                        <li class="active"><a href="#">Clothing</a></li>
-                                        <li><a href="#">Electronics</a></li>
-                                        <li><a href="#shoes">Shoes</a></li>
-                                        <li><a href="#">Watches</a></li>
-                                        <li><a href="#jewellery">Jewellery</a></li>
-                                        <li><a href="#">Health and Beauty</a></li>
-                                        <li><a href="#kids">Kids and Babies</a></li>
-                                        <li><a href="#">Sports</a></li>
-                                        <li><a href="#">Home and Garden</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- news brand -->
-                        <div id="brand"  class="brand-bg">
-                            <h3>New brands</h3>
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                    <div class="brand-box">
-                                        <h5>Sale</h5>
-                                        <i><img src="icon/p1.png"/>
-                                        </i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                    <div class="brand-box">
-                                        <i><img src="icon/p2.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                    <div class="brand-box">
-                                        <i><img src="icon/p1.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                    <div class="brand-box">
-                                        <i><img src="icon/p4.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="seemore" href="#">See more</a>
-                        <!-- end news brand -->
-
-                        <!-- news shoes -->
-                        <div id="shoes" class="shoes-bg">
-                            <h3>New shoes</h3>
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                    <div class="shoes-box">
-                                        <h5>Sale</h5>
-                                        <i><img src="icon/s1.png"/>
-                                        </i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                    <div class="shoes-box">
-                                        <i><img src="icon/s2.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                    <div class="shoes-box">
-                                        <i><img src="icon/s3.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                    <div class="shoes-box">
-                                        <i><img src="icon/s4.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="seemore" href="#">See more</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- end news shoes -->
-
-            <!-- end Categories -->
-
-            <section>
-                <!--  save -->
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="save">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                        <div class="save_box">
-                                            <h3>save up to 50%</h3>
-                                            <a href="#">Buy now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end save -->
-            </section>
-
-            <!-- news Jewellery -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="jewellery" class="Jewellery-bg">
-                            <h3>New Jewellery</h3>
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                    <div class="Jewellery-box">
-                                        <h5>Sale</h5>
-                                        <i><img src="icon/j1.png"/>
-                                        </i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                    <div class="Jewellery-box">
-                                        <i><img src="icon/j2.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                    <div class="Jewellery-box">
-                                        <i><img src="icon/j3.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                    <div class="Jewellery-box">
-                                        <i><img src="icon/j4.png"/></i>
-                                        <h4>Price $<span class="nolmal">100</span></h4>
-                                    </div>
-                                    <a class="buynow" href="#">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="seemore" href="#">See more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- end news Jewellery -->
-
-            <!-- news Kids -->
-            <div id="kids" class="Kids_background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="Kids-bg">
-                                <h3>Kids and Babies</h3>
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                        <div class="Kids-box">
-
-                                            <i><img src="icon/k1.png"/>
-                                            </i>
-                                            <h4>Price $<span class="nolmal">100</span></h4>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                                        <div class="Kids-box">
-                                            <i><img src="icon/k1.png"/></i>
-                                            <h4>Price $<span class="nolmal">100</span></h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                        <div class="Kids-box">
-                                            <i><img src="icon/k1.png"/></i>
-                                            <h4>Price $<span class="nolmal">100</span></h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                                        <div class="Kids-box">
-                                            <i><img src="icon/k1.png"/></i>
-                                            <h4>Price $<span class="nolmal">100</span></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end news Kids -->
-
-            <!--  footer -->
-            <footer>
-                <div class="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="footer_top">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                            <a href="index.html"> <img class="logo1" src="images/logo1.png" /></a>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                            <ul class="sociel">
-                                                <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
-                                        <div class="address">
-                                            <h3>Contact us </h3>
-                                            <ul class="loca">
-                                                <li>
-                                                    <a href="#"><img src="icon/loc.png" alt="#" /></a>145 londone
-                                                    <br>uk </li>
-                                                <li>
-                                                    <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
-                                                <li>
-                                                    <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com </li>
-
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="address">
-                                            <h3>customer service</h3>
-                                            <ul class="Menu_footer">
-                                                <li class="active"> <a href="#">My account</a> </li>
-                                                <li><a href="#">Wishlist</a> </li>
-                                                <li><a href="#">My Cart</a> </li>
-                                                <li><a href="#">Checkout</a> </li>
-                                                <li><a href="http://localhost:8080/FootballStore/Login.jsp#">Login</a> </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="address">
-                                            <h3>corporation</h3>
-                                            <ul class="Links_footer">
-                                                <li class="active"><a href="#">My account</a> </li>
-                                                <li><a href="#">Wishlist</a> </li>
-                                                <li><a href="#">My Cart</a> </li>
-                                                <li><a href="#"> Checkout</a> </li>
-                                                <li><a href="Login.jsp">Login</a> </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 col-sm-6 ">
-                                        <div class="address">
-                                            <h3>why choose us</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-                                            <form class="newtetter">
-                                                <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                                <button class="submit">Subscribe</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="copyright"> 
-                        <div class="container">
-                            <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
-                        </div>
-                    </div>
-                </div>
-
-            </footer>
-            <!-- end footer -->
-
-
+          </div>
         </div>
-
-        <div class="overlay"></div>
-
-        <!-- Javascript files-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery-3.0.0.min.js"></script>
-
-        <!-- sidebar -->
-        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
-
-                $('#dismiss, .overlay').on('click', function () {
-                    $('#sidebar').removeClass('active');
-                    $('.overlay').removeClass('active');
-                });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').addClass('active');
-                    $('.overlay').addClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-            });
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                $(".fancybox").fancybox({
-                    openEffect: "none",
-                    closeEffect: "none"
-                });
-
-                $(".zoom").hover(function () {
-
-                    $(this).addClass('transition');
-                }, function () {
-
-                    $(this).removeClass('transition');
-                });
-            });
-        </script>
-        <script>
-            // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-            // Australia.
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 11,
-                    center: {
-                        lat: 40.645037,
-                        lng: -73.880224
-                    },
-                });
-
-                var image = 'images/maps-and-flags.png';
-                var beachMarker = new google.maps.Marker({
-                    position: {
-                        lat: 40.645037,
-                        lng: -73.880224
-                    },
-                    map: map,
-                    icon: image
-                });
+      </div>
+      <!-- HERO SECTION-->
+      <div class="container">
+        <section class="hero pb-3 bg-cover bg-center d-flex align-items-center" style="background: url(img/hero-banner-alt.jpg)">
+          <div class="container py-5">
+            <div class="row px-4 px-lg-5">
+              <div class="col-lg-6">
+                <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
+                <h1 class="h2 text-uppercase mb-3">20% off on new season</h1><a class="btn btn-dark" href="shop.html">Browse collections</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CATEGORIES SECTION-->
+        <section class="pt-5">
+          <header class="text-center">
+            <p class="small text-muted small text-uppercase mb-1">Carefully created collections</p>
+            <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+          </header>
+          <div class="row">
+            <div class="col-md-4"><a class="category-item" href="shop.html"><img class="img-fluid" src="img/cat-img-1.jpg" alt=""/><strong class="category-item-title">Clothes</strong></a>
+            </div>
+            <div class="col-md-4"><a class="category-item mb-4" href="shop.html"><img class="img-fluid" src="img/cat-img-2.jpg" alt=""/><strong class="category-item-title">Shoes</strong></a><a class="category-item" href="shop.html"><img class="img-fluid" src="img/cat-img-3.jpg" alt=""/><strong class="category-item-title">Watches</strong></a>
+            </div>
+            <div class="col-md-4"><a class="category-item" href="shop.html"><img class="img-fluid" src="img/cat-img-4.jpg" alt=""/><strong class="category-item-title">Electronics</strong></a>
+            </div>
+          </div>
+        </section>
+        <!-- TRENDING PRODUCTS-->
+        <section class="py-5">
+          <header>
+            <p class="small text-muted small text-uppercase mb-1">Made the hard way</p>
+            <h2 class="h5 text-uppercase mb-4">Top trending products</h2>
+          </header>
+          <div class="row">
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-1.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Kui Ye Chen’s AirPods</a></h6>
+                <p class="small text-muted">$250</p>
+              </div>
+            </div>
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-primary">Sale</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-2.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Air Jordan 12 gym red</a></h6>
+                <p class="small text-muted">$300</p>
+              </div>
+            </div>
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-3.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Cyan cotton t-shirt</a></h6>
+                <p class="small text-muted">$25</p>
+              </div>
+            </div>
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-info">New</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-4.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Timex Unisex Originals</a></h6>
+                <p class="small text-muted">$351</p>
+              </div>
+            </div>
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-danger">Sold</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-5.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Red digital smartwatch</a></h6>
+                <p class="small text-muted">$250</p>
+              </div>
+            </div>
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-6.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Nike air max 95</a></h6>
+                <p class="small text-muted">$300</p>
+              </div>
+            </div>
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-7.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Joemalone Women prefume</a></h6>
+                <p class="small text-muted">$25</p>
+              </div>
+            </div>
+            <!-- PRODUCT-->
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="product text-center">
+                <div class="position-relative mb-3">
+                  <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-8.jpg" alt="..."></a>
+                  <div class="product-overlay">
+                    <ul class="mb-0 list-inline">
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h6> <a class="reset-anchor" href="detail.html">Apple Watch</a></h6>
+                <p class="small text-muted">$351</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SERVICES-->
+        <section class="py-5 bg-light">
+          <div class="container">
+            <div class="row text-center gy-3">
+              <div class="col-lg-4">
+                <div class="d-inline-block">
+                  <div class="d-flex align-items-end">
+                    <svg class="svg-icon svg-icon-big svg-icon-light">
+                      <use xlink:href="#delivery-time-1"> </use>
+                    </svg>
+                    <div class="text-start ms-3">
+                      <h6 class="text-uppercase mb-1">Free shipping</h6>
+                      <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-inline-block">
+                  <div class="d-flex align-items-end">
+                    <svg class="svg-icon svg-icon-big svg-icon-light">
+                      <use xlink:href="#helpline-24h-1"> </use>
+                    </svg>
+                    <div class="text-start ms-3">
+                      <h6 class="text-uppercase mb-1">24 x 7 service</h6>
+                      <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-inline-block">
+                  <div class="d-flex align-items-end">
+                    <svg class="svg-icon svg-icon-big svg-icon-light">
+                      <use xlink:href="#label-tag-1"> </use>
+                    </svg>
+                    <div class="text-start ms-3">
+                      <h6 class="text-uppercase mb-1">Festivaloffers</h6>
+                      <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- NEWSLETTER-->
+        <section class="py-5">
+          <div class="container p-0">
+            <div class="row gy-3">
+              <div class="col-lg-6">
+                <h5 class="text-uppercase">Let's be friends!</h5>
+                <p class="text-sm text-muted mb-0">Nisi nisi tempor consequat laboris nisi.</p>
+              </div>
+              <div class="col-lg-6">
+                <form action="#">
+                  <div class="input-group">
+                    <input class="form-control form-control-lg" type="email" placeholder="Enter your email address" aria-describedby="button-addon2">
+                    <button class="btn btn-dark" id="button-addon2" type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="bg-dark text-white">
+        <div class="container py-4">
+          <div class="row py-5">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <h6 class="text-uppercase mb-3">Customer services</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#!">Help &amp; Contact Us</a></li>
+                <li><a class="footer-link" href="#!">Returns &amp; Refunds</a></li>
+                <li><a class="footer-link" href="#!">Online Stores</a></li>
+                <li><a class="footer-link" href="#!">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+              <h6 class="text-uppercase mb-3">Company</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#!">What We Do</a></li>
+                <li><a class="footer-link" href="#!">Available Services</a></li>
+                <li><a class="footer-link" href="#!">Latest Posts</a></li>
+                <li><a class="footer-link" href="#!">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-uppercase mb-3">Social media</h6>
+              <ul class="list-unstyled mb-0">
+                <li><a class="footer-link" href="#!">Twitter</a></li>
+                <li><a class="footer-link" href="#!">Instagram</a></li>
+                <li><a class="footer-link" href="#!">Tumblr</a></li>
+                <li><a class="footer-link" href="#!">Pinterest</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-top pt-4" style="border-color: #1d1d1d !important">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start">
+                <p class="small text-muted mb-0">&copy; 2021 All rights reserved.</p>
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <p class="small text-muted mb-0">Template designed by <a class="text-white reset-anchor" href="https://bootstrapious.com/p/boutique-bootstrap-e-commerce-template">Bootstrapious</a></p>
+                <!-- If you want to remove the backlink, please purchase the Attribution-Free License. See details in readme.txt or license.txt. Thanks!-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- JavaScript files-->
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="vendor/nouislider/nouislider.min.js"></script>
+      <script src="vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+      <script src="js/front.js"></script>
+      <script>
+        // ------------------------------------------------------- //
+        //   Inject SVG Sprite - 
+        //   see more here 
+        //   https://css-tricks.com/ajaxing-svg-sprite/
+        // ------------------------------------------------------ //
+        function injectSvgSprite(path) {
+        
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.className = 'd-none';
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
             }
-        </script>
-        <!-- google map js -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-        <!-- end google map js -->
-    </body>
-
+        }
+        // this is set to BootstrapTemple website as you cannot 
+        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+        // while using file:// protocol
+        // pls don't forget to change to your domain :)
+        injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+        
+      </script>
+      <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </div>
+  </body>
 </html>
