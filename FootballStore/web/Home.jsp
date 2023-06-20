@@ -37,7 +37,7 @@
       <!-- navbar-->
       <header class="header bg-white">
         <div class="container px-lg-3">
-          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><a class="navbar-brand" href="index.html"><span class="fw-bold text-uppercase text-dark">Boutique</span></a>
+          <nav class="navbar navbar-expand-lg navbar-light py-3 px-lg-0"><a class="navbar-brand" href="Home.jsp"><span class="fw-bold text-uppercase te"index.htmlxt-dark">Boutique</span></a>
             <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto">
@@ -51,12 +51,11 @@
                   <!-- Link--><a class="nav-link" href="detail.html">Product detail</a>
                 </li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                  <div class="dropdown-menu mt-3 shadow-sm" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="index.html">Homepage</a><a class="dropdown-item border-0 transition-link" href="shop.html">Category</a><a class="dropdown-item border-0 transition-link" href="detail.html">Product detail</a><a class="dropdown-item border-0 transition-link" href="cart.html">Shopping cart</a><a class="dropdown-item border-0 transition-link" href="checkout.html">Checkout</a></div>
+                  <div class="dropdown-menu mt-3 shadow-sm" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="Home.jsp">Homepage</a><a class="dropdown-item border-0 transition-link" href="shop.html">Category</a><a class="dropdown-item border-0 transition-link" href="detail.html">Product detail</a><a class="dropdown-item border-0 transition-link" href="cart.html">Shopping cart</a><a class="dropdown-item border-0 transition-link" href="checkout.html">Checkout</a></div>
                 </li>
               </ul>
               <ul class="navbar-nav ms-auto">               
                 <li class="nav-item"><a class="nav-link" href="cart.html"> <i class="fas fa-dolly-flatbed me-1 text-gray"></i>Cart<small class="text-gray fw-normal">(2)</small></a></li>
-                <li class="nav-item"><a class="nav-link" href="#!"> <i class="far fa-heart me-1"></i><small class="text-gray fw-normal"> (0)</small></a></li>
                 <li class="nav-item"><a class="nav-link" href="Login.jsp"> <i class="fas fa-user me-1 text-gray fw-normal"></i>Login</a></li>
               </ul>
             </div>
@@ -94,7 +93,7 @@
                         </div>
                       </div>
                       <div class="col-sm-5"><a class="btn btn-dark btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0" href="cart.html">Add to cart</a></div>
-                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="far fa-heart me-2"></i>Add to wish list</a>
+                    </div><a class="btn btn-link text-dark text-decoration-none p-0" href="#!"><i class="x me-2"></i>Add to wish list</a>
                   </div>
                 </div>
               </div>
@@ -143,9 +142,9 @@
                   <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-1.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -160,9 +159,9 @@
                   <div class="badge text-white bg-primary">Sale</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-2.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -177,9 +176,9 @@
                   <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-3.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -194,9 +193,9 @@
                   <div class="badge text-white bg-info">New</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-4.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -211,9 +210,9 @@
                   <div class="badge text-white bg-danger">Sold</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-5.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -228,9 +227,9 @@
                   <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-6.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -245,9 +244,9 @@
                   <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-7.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -262,9 +261,9 @@
                   <div class="badge text-white bg-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-8.jpg" alt="..."></a>
                   <div class="product-overlay">
                     <ul class="mb-0 list-inline">
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#!"><i class="far fa-heart"></i></a></li>
-                      <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
-                      <li class="list-inline-item me-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="#!"><i class="x"></i></a></li>
+                      <li class="list-inline-item m-0 p-0"><a class="" href="cart.html">Add to cart</a></li>
+                      <li class="list-inline-item me-0"><a class="" href="#productView" data-bs-toggle="modal"><i class="x"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -275,51 +274,6 @@
           </div>
         </section>
         <!-- SERVICES-->
-        <section class="py-5 bg-light">
-          <div class="container">
-            <div class="row text-center gy-3">
-              <div class="col-lg-4">
-                <div class="d-inline-block">
-                  <div class="d-flex align-items-end">
-                    <svg class="svg-icon svg-icon-big svg-icon-light">
-                      <use xlink:href="#delivery-time-1"> </use>
-                    </svg>
-                    <div class="text-start ms-3">
-                      <h6 class="text-uppercase mb-1">Free shipping</h6>
-                      <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="d-inline-block">
-                  <div class="d-flex align-items-end">
-                    <svg class="svg-icon svg-icon-big svg-icon-light">
-                      <use xlink:href="#helpline-24h-1"> </use>
-                    </svg>
-                    <div class="text-start ms-3">
-                      <h6 class="text-uppercase mb-1">24 x 7 service</h6>
-                      <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="d-inline-block">
-                  <div class="d-flex align-items-end">
-                    <svg class="svg-icon svg-icon-big svg-icon-light">
-                      <use xlink:href="#label-tag-1"> </use>
-                    </svg>
-                    <div class="text-start ms-3">
-                      <h6 class="text-uppercase mb-1">Festivaloffers</h6>
-                      <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <!-- NEWSLETTER-->
         <section class="py-5">
           <div class="container p-0">
@@ -377,7 +331,6 @@
                 <p class="small text-muted mb-0">&copy; 2021 All rights reserved.</p>
               </div>
               <div class="col-md-6 text-center text-md-end">
-                <p class="small text-muted mb-0">Template designed by <a class="text-white reset-anchor" href="https://bootstrapious.com/p/boutique-bootstrap-e-commerce-template">Bootstrapious</a></p>
                 <!-- If you want to remove the backlink, please purchase the Attribution-Free License. See details in readme.txt or license.txt. Thanks!-->
               </div>
             </div>
@@ -409,10 +362,6 @@
             document.body.insertBefore(div, document.body.childNodes[0]);
             }
         }
-        // this is set to BootstrapTemple website as you cannot 
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
         injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
         
       </script>
